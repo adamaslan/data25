@@ -1,0 +1,21 @@
+reverse string
+# reversed
+
+  function reVerse1(str) {
+     
+     let reversed = ''
+
+    reversed = str.split('').reverse().join(''); 
+      
+     return reversed;
+    }
+
+# maps 
+
+You are given a list of names, names = ["Alice", "Bob", "Charlie", "Alice", "David", "Bob"].
+
+Using a hash map (or dictionary in Python/JavaScript), count the occurrences of each name in the list.
+
+Your output should be a hash map where keys are the names and values are their respective counts.
+
+
