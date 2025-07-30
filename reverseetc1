@@ -1,14 +1,87 @@
-reverse string
-# reversed
+# yas
 
-  function reVerse1(str) {
-     
-     let reversed = ''
+### Problem: Word Frequency Counter
 
-    reversed = str.split('').reverse().join(''); 
-      
-     return reversed;
-    }
+Write a function called `countWords` that takes a string of text and returns a hash map (or dictionary) where the keys are the words in the text and the values are the frequencies of those words. The function should be case-insensitive, meaning it should treat "Hello" and "hello" as the same word. Punctuation attached to words should be ignored (e.g., "hello!" should be treated as "hello").
+
+Here's an example input and output:
+
+**Input:**
+```javascript
+const text = "Hello, hello! How are you? Are you doing well?";
+```
+
+**Output:**
+```javascript
+{
+  hello: 2,
+  how: 1,
+  are: 2,
+  you: 2,
+  doing: 1,
+  well: 1
+}
+```
+    
+    Given an array of numbers, write a function called `countNumbers` 
+    that counts the occurrences of each number in the array
+    and returns an object where the keys are the numbers and the values are their respective counts.
+
+Here's an example array:
+
+```javascript
+const numbers = [1, 2, 3, 4, 2, 3, 1, 5, 4, 2];
+```
+
+
+
+Your task is to write the `countNumbers` function to produce the following output for the given array:
+
+```javascript
+{
+  1: 2,
+  2: 3,
+  3: 2,
+  4: 2,
+  5: 1
+}
+```
+
+
+const counter2  = (names) ‎ =  > {
+
+let cntz = {}
+
+for ( let number of numbers) {
+if (cntz[number]){
+
+cntz[number]++
+}
+else{cntz[number]=1
+}
+}
+return cntz
+}
+
+    
+
+	Leet Hacker
+to do
+
+rev string
+fun revs (str)
+str.split
+const arr = str .spli(‘’)
+
+arr.reverse()
+return arr.join
+
+reverse int
+
+soo too string 
+reverse it - reverse
+math.sign
+parse int
 
 # maps 
 
@@ -18,4 +91,1577 @@ Using a hash map (or dictionary in Python/JavaScript), count the occurrences of 
 
 Your output should be a hash map where keys are the names and values are their respective counts.
 
+ const counter1  = (names) ‎ =  > {
+
+let cntz = {}
+
+for ( let dogs of names) {
+if (names.key){
+
+namesv
+}
+else{names.key.append;
+names.value = 1;
+}
+return cntz
+}
+}
+
+const counter1  = (names) ‎ =  > {
+
+let cntz = {}
+
+for ( let name of names) {
+if (cntz[name]){
+
+cntz[name]++
+}
+else{cntz[name]=1
+}
+}
+return cntz
+}
+
+
+
+understand  time space complexity
+time - past constant - linear - 
+brute
+base cases think of more
+multiple ways to do things in python / js
+
+383. Ransom Note
+
+https://leetcode.com/problems/ransom-note/?envType=study-plan-v2&envId=top-interview-150
+
+no ransom note magazine create a hash map then loop through the string magazine and add string to hashmark then check map to see if ransom note can be created from has pass map
+
+once you add to the Hash map, you can check to see if the letter or character in the string is in the ransom note if it is, if all the letters are in the note, then return true
+
+so you could count the number of characters in the magazine string and the ransom note string or count the matches and if each unique match is the same amount as there is in the ransom note then you’re good to go return true otherwise return false if the number is less than what’s in the street of Random
+2. Add Two Numbers
+get answer
+
+
+hash tables - graphs - linked list
+js n python 
+
+https://leetcode.com/tag/hash-table/
+
+
+Algo easiest
+https://leetcode.com/problemset/algorithms/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d&page=1
+
+explain to a novice and expert
+
+js easiest
+https://leetcode.com/problemset/javascript/? sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d 	
+
+https://leetcode.com/studyplan/top-interview-150/
+
+https://www.cram.com/flashcards/algo-data-structure-js-thangs-13977265
+
+https://leetcode.com/problems/isomorphic-strings/?envType=study-plan-v2&envId=top-interview-150
+
+
+
+
+
+
+https://www.youtube.com/watch?v=UrcwDOEBzZE&ab_channel=NeetCode
+most important algos and how to study neet
+
+10-18
+bin ser t
+
+insert method
+so you get data and have to place it
+so 4 cases 
+1 current child node left exists 
+      1
+     /
+   2      so if data less than this.left
+create a new node below
+
+2  c c n right exists 
+3 reached bottom of tree and left not defined
+4 reach bottom and right not defined
+
+so normal tree
+add (data) { 
+
+}
+
+then
+insert(data){
+const add = this.children.push(new Node(data));
+if (this.data > this.left & this.right){
+this.right.push(add(data))}
+else
+{this.right.push(add(data))}
+
+so actual is:
+
+insert (data){
+if (data < this.data & this.left){
+this.left.insert(data);}
+else if (data < this.data){
+this.left = new Node(data); }
+else if ( d < t.d and t.r)
+else if  (
+}
+
+so we know we can cut the possibilities in half 
+
+contains(data) {
+if (data > this.data){
+contains(data) = this.left
+
+}
+ z
+10-16
+udemy - level width
+useful syntax
+arr.push(…node.children);
+// essential for BFS
+counters[counters.length-1]++;
+//way to add to the current index  - what else could you do with that? ask chatgpt
+
+
+
+
+10-14
+bfs - create an array thats = [this.root]
+then while array.length
+shift to remove first item 
+soo root node shifted, any children pushed 
+call the fn
+
+dfs same 
+cept unshift
+
+confusing: fn(node)
+
+
+
+
+9-24
+
+Problem: Write a function to find the middle element of a singly linked list.
+
+Details:
+
+	•	You are given the head of a singly linked list.
+	•	Your task is to return the value of the middle element.
+	•	If there are two middle elements, return the second one.
+
+Example:
+
+Input: 1 -> 2 -> 3 -> 4 -> 5
+Output: 3
+
+sooo 
+this.head 
+this.next
+
+if (this.head)
+
+path sum 3
+
+https://youtu.be/VDTZiggKlAE?si=-VqWFxFDTtkvKzWE
+
+Path Sum - LeetCode 112
+https://leetcode.com/problems/path-sum/
+
+return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
+
+so do a dfs and sum from root to leaf
+make a hash map for each router 
+or just create a counter and add if one you reach the leaf it sums then return true
+
+
+
+valid palindrome 125
+https://youtu.be/Jc036bXmch4?si=anwBLLmbtJOwXMX_ algojs 
+
+clean string 
+check if it’s palendrom
+
+remove space non alphanumerics
+
+spit out the new string 
+match it to the other
+
+what is methods 
+reverse
+if it’s a letter or number push it into the new array
+
+
+
+
+bfs + hash
+
+200 Number of Islands - LeetCode
+https://leetcode.com/problems/number-of-islands/
+
+Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+ 
+Example 1:
+Input: grid = [
+  ["1","1","1","1","0"],
+  ["1","1","0","1","0"],
+  ["1","1","0","0","0"],
+  ["0","0","0","0","0"]
+]
+Output: 1
+
+bfs
+
+empty array
+push all 
+https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+
+1282
+
+There are n people that are split into some unknown number of groups. Each person is labeled with a unique ID from 0 to n - 1.
+You are given an integer array groupSizes, where groupSizes[i] is the size of the group that person i is in. For example, if groupSizes[1] = 3, then person 1 must be in a group of size 3.
+Return a list of groups such that each person i is in a group of size groupSizes[i].
+Each person should appear in exactly one group, and every person must be in a group. If there are multiple answers, return any of them. It is guaranteed that there will be at least one valid solution for the given input.
+ 
+Example 1:
+Input: groupSizes = [3,3,3,3,3,1,3]
+Output: [[5],[0,1,2],[3,4,6]]
+Explanation: 
+The first group is [5]. The size is 1, and groupSizes[5] = 1.
+The second group is [0,1,2]. The size is 3, and groupSizes[0] = groupSizes[1] = groupSizes[2] = 3.
+The third group is [3,4,6]. The size is 3, and groupSizes[3] = groupSizes[4] = groupSizes[6] = 3.
+Other possible solutions are [[2,1,6],[5],[0,4,3]] and [[5],[0,6,2],[4,3,1]].
+Example 2:
+Input: groupSizes = [2,1,3,3,3,2]
+Output: [[1],[0,5],[2,3,4]]
+
+
+soo part of it is the robot speak 
+
+what it want 
+
+an array of the needed number of arrays based on the size of the group each person must be in
+
+so groups as arrays 
+
+people as:
+ labeled with a unique ID from 0 to n - 1.
+
+n being the total number of people? (my guess)
+
+so in main array GS we get da person put them in a group 
+the group capacity is equal to i - 1 
+so we get next person put them in the same group if there is capacity and i = the capacity  otherwise we put them in a new group
+we go this till we iterate thru the array
+so we a new array called “grouped”
+
+
+
+
+https://leetcode.com/problems/find-the-number-of-good-pairs-i/
+
+
+Return a list of groups such that each person i is in a group of size groupSizes[i].
+
+3162 
+
+You are given 2 integer arrays nums1 and nums2 of lengths n and m respectively. You are also given a positive integer k.
+A pair (i, j) is called good if nums1[i] is divisible by nums2[j] * k (0 <= i <= n - 1, 0 <= j <= m - 1).
+Return the total number of good pairs.
+
+Example 1:
+Input: nums1 = [1,3,4], nums2 = [1,3,4], k = 1
+Output: 5
+Explanation:
+The 5 good pairs are (0, 0), (1, 0), (1, 1), (2, 0), and (2, 2).
+Example 2:
+Input: nums1 = [1,2,4,12], nums2 = [2,4], k = 3
+Output: 2
+Explanation:
+The 2 good pairs are (3, 0) and (3, 1).
+
+
+
+so hash to:
+multiple nums2 by K and store value 
+
+then for i in nums 1
+if nums i / hash i 
+or modulo = 0
+add index or nums i and hash i
+
+
+
+so key 
+
+
+
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+Return the answer in an array.
+1365. How Many Numbers Are Smaller Than the Current Number 
+
+Example 1:
+Input: nums = [8,1,2,2,3]
+Output: [4,0,1,1,3]
+Explanation: 
+For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3). 
+
+why the sort?
+
+so hash to:
+create a counter for each number in the array - 
+also since it returned as an array
+make it an array to start
+
+so loop thru is it bigg
+num = nums [i]
+
+is num > than the rest of the numbers 
+if so add + 1 to result i 
+
+so how do i compare nums i to the rest of the rest
+well add a hash map
+
+so if num > dict i 
+results 
+
+soooo create a dictionary
+add 8  check and see if it is great than null not valid - add it 
+add 1 is it greater no create count 0
+add 2. < > count ++
+add 2 <>= count ++
+add 3 < > count ++ > count ++ > count ++
+
+check dick if i is > nums i
+
+so while i is < nums.length
+
+if (dick[i] != null || num[i] > dick[i]){
+
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var smallerNumbersThanCurrent = function(nums) {
+
+let dict = new Map ();
+
+for ( let i =0 ; i > nums.length; i++)
+{
+    dict.set(nums[i],0)
+if (dict[i] != null || nums[i] > dict[i]){
+      const currentValue = dict.get(i);
+  const newValue = currentValue + 1;
+
+}
+}
+}
+    
+};
+
+not mine:
+
+var smallerNumbersThanCurrent = function(nums) {
+
+  const result = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if num
+const num = nums[i];
+   
+   
+  }
+
+  return result;
+
+
+https://youtu.be/MjpNK4x2U0k?si=cEk57iaDtwUoiolF
+brute force - double for loop
+
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+17. Letter Combinations of a Phone Number
+
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+Example 1:
+Input: digits = "23"
+Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+
+* 0 <= digits.length <= 4
+* digits[i] is a digit in the range ['2', '9'].
+
+soo we know it could be 0 or up to 4
+and its 2 - 9
+
+
+
+so map like all the letters and then when they are called also create a use case for nothing
+
+const dictionary = {
+        “abc”: 2, 
+        “def”: 3, 
+        “ghi”: 4, 
+        “jkl”: 5, 
+        “mno”: 6, 
+        “pqrs”: 7, 
+        “tuv”: 8, 
+        “wxyz”: 9
+    }
+
+
+print out all first digit and then combine the next digits iterations 
+
+
+we out
+
+hash map
+
+https://youtu.be/F7EoBxhPmBk?si=IZQH8emHSxV7Xcq7 code at 6
+uses two empty arrays
+backtracking 
+recursion
+
+24:$;9;’blah
+
+https://leetcode.com/problems/permutation-difference-between-two-strings
+keep track of index of s and t
+
+subtract using abs
+
+s[i] add to set
+
+keep track of characters index 
+
+then sum the absolute differences 
+
+so what are we doing with the hash map here?
+
+   for (let i = 0; i < s.length; i++) {
+		// Grab the current letter
+        const letter = s[i];
+so if you have u find all the first 
+
+then see where it is in the second
+
+*
+so if a matches b - abs a- b
+
+knowing constraint same length
+how it similar 
+
+oh hi
+so how was 
+what are
+i 
+
+https://leetcode.com/problems/roman-to-integer/
+
+so 3 of 7 letters subtract
+
+do u need to code the order
+
+if one of 3 is before
+
+aka
+
+* I can be placed before V (5) and X (10) to make 4 and 9. 
+* X can be placed before L (50) and C (100) to make 40 and 90. 
+* C can be placed before D (500) and M (1000) to make 400 and 900.
+
+var romanToInt = function(s) {
+    let sum = 0;
+    // Used to reference what each string (romain character) value is
+    const dictionary = {
+        "I": 1, 
+        "IV": 4, 
+        "V": 5, 
+        "IX": 9, 
+        "X": 10, 
+        "XL": 40, 
+        "L": 50, 
+        "XC": 90, 
+        "C": 100, 
+        "CD": 400, 
+        "D": 500, 
+        "CM": 900, 
+        "M": 1000
+    }
+example - MMXIV -2024
+    
+	// We need to iterate the string to find each value
+    for (let i = 0; i < s.length; i++) {
+		// Grab the current letter
+        const letter = s[i];
+		
+//sooo the real challenge here is the special condition - rest of the code is simple 
+
+// Grab the second letter next to current to check if special conditions are there (such as IV, CM etc.)
+      
+  const letterSet = s[i] + s[i + 1];
+     
+   // We want to check first if a special combo exist - so letterset is a special variable that temporarily creates a two character string - 
+
+        if (letterSet in dictionary) {
+			
+// If exist, add the value - sooo of that string exists in the dict 😈🙃 add it to the sum
+
+			sum += dictionary[letterSet];
+		
+	// Increment i since we do not want to repeat the character next to. 
+			// For example: currentRomain =>"I" and Combo => "IV". 
+			// Whole value is 4. If we don't add i, next iteration will say we are at "V" now when it has already been added. soooo then we do the i++ to move it along a second time -
+            
+i++;
+            continue;
+        }
+        
+// soo that breaks us out of the special condition loop
+
+		// Add single romain value if special character not present 
+//note object accessed same way as arrray
+// note letter is s[i] and dict is an object
+        sum += dictionary[letter];
+    }
+
+    // Return total sum
+    return sum;
+};
+
+
+
+https://leetcode.com/problems/roman-to-integer/solutions/2038028/javascript-with-hashtable/
+
+
+https://leetcode.com/problems/jewels-and-stones/
+
+https://www.youtube.com/watch?v=IOt4dS1IWWU&ab_channel=GregHogg
+j and s solved
+
+var numJewelsInStones = function(jewels, stones) { let jewelSet = new Set(jewels); let counter = 0; for (let stone of stones) { if (jewelSet.has(stone)) { counter++; } } return counter; };
+
+function numJewelsInStones(jewels, stones) {
+  let jewelSet = {}; // Object to simulate a set
+
+  // Convert jewels string to an array for character access
+  jewels = jewels.split("");
+
+  // Initialize counter for jewel occurrences
+  let counter = 0;
+
+  // Loop through each stone character
+  for (let i = 0; i < stones.length; i++) {
+    let stone = stones[i];
+
+    // Check if stone character exists in the jewel "set" (object)
+    if (stone in jewelSet) { // Check property existence (exploiting behavior)
+      counter++;
+    } else {
+      // Efficiently add new characters to the "set"
+      jewelSet[stone] = stone; // Use the stone itself as a marker
+    }
+  }
+
+  return counter;
+}
+
+
+get good at basics
+
+https://leetcode.com/problems/two-sum/description/
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+
+
+so basically 
+we have hashy[I] so if target - nums i equals it we good 
+if not add the num[i] to hashy
+
+
+
+https://leetcode.com/problems/contains-duplicate-ii/?envType=study-plan-v2&envId=top-interview-150
+219 contains duplicate 2
+hash map
+Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
+Constraints:
+* 1 <= nums.length <= 105
+* -109 <= nums[i] <= 109
+* 0 <= k <= 105
+
+so create a hash map aka array - and then see if theres a duplicate
+but make sure that the difference between I and j <= K
+
+var containsNearbyDuplicate = function(nums, k) {
+    let hashy = {};
+
+    for (let i = 0; i < nums.length; i++) {
+
+        // Check if nums[i] exists in hashy within distance k
+
+        if (hashy[nums[i]] !== undefined && i - hashy[nums[i]] <= k) {
+            return true;
+        }
+
+        // Store the current index i in hashy[nums[i]]
+
+        hashy[nums[i]] = i;
+    }
+    return false;
+};
+
+
+https://leetcode.com/problems/happy-number/?envType=study-plan-v2&envId=top-interview-150
+202 happy number 
+
+Write an algorithm to determine if a number n is happy.
+A happy number is a number defined by the following process:
+* Starting with any positive integer, replace the number by the sum of the squares of its digits.
+* Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+* Those numbers for which this process ends in 1 are happy.
+Return true if n is a happy number, and false if not.
+ 
+Example 1:
+Input: n = 19
+Output: true
+Explanation: ALL 2s are SQUARES<
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1 
+
+hash map
+
+for loop - split n 
+
+square it
+if sum is 1 
+split it
+return true
+if not add to hash
+add to hash
+
+base case
+0 false
+endlessly loop
+
+https://leetcode.com/problems/happy-number/?envType=study-plan-v2&envId=top-interview-150
+
+
+https://leetcode.com/problems/word-pattern/?envType=study-plan-v2&envId=top-interview-150
+290 word patterns
+
+Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+ 
+
+Example 1:
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+
+
+
+https://leetcode.com/problems/score-of-a-string/
+
+3110. Score of a String
+
+You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+Return the score of s.
+ 
+Example 1:
+Input: s = "hello"
+Output: 13
+
+
+
+arrays
+
+169. Majority Element
+https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150
+
+Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+llow-up: Could you solve the problem in linear time and in O(1) space?
+
+func
+num
+so for ( x = 0, x > nums.length - 1, x++)
+
+look into each index 
+keep count of the value/ element
+if the same value / element exists more than n/ 2 times return it
+
+make a set
+just add to it
+return the any that fits case
+base : two major, 
+
+dfs vs bfs
+
+https://hackernoon.com/a-beginners-guide-to-bfs-and-dfs-in-javascript
+
+function bfs(graph, start) {
+  const queue = [start];
+//bfs q - dfs stack
+  const visited = new Set();
+//use of set
+
+  const result = [];
+
+  while (queue.length) {
+    const vertex = queue.shift();
+//
+
+    if (!visited.has(vertex)) {
+      visited.add(vertex);
+      result.push(vertex);
+
+      for (const neighbor of graph[vertex]) {
+        queue.push(neighbor);
+      }
+    }
+  }
+
+  return result;
+}
+
+bfs(graph, 'A'); // ['A', 'B', 'D', 'C', 'E', 'F']
+
+
+function dfs(graph, start) {
+  const stack = [start];
+  const visited = new Set();
+  const result = [];
+
+  while (stack.length) {
+    const vertex = stack.pop();
+//pop off stack
+
+    if (!visited.has(vertex)) {
+      visited.add(vertex);
+      result.push(vertex);
+
+      for (const neighbor of graph[vertex]) {
+        stack.push(neighbor);
+      }
+    }
+  }
+
+  return result;
+}
+
+dfs(graph, 'A'); // ['A', 'D', 'E', 'F', 'B', 'C']
+
+
+
+286 walls and gates
+https://leetcode.com/problems/walls-and-gates/
+
+https://neetcode.io/problems/islands-and-treasure
+
+1. -1 - A water cell that can not be traversed.
+2. 0 - A treasure chest.
+3. INF - A land cell that can be traversed. We use the integer 2^31 - 1 = 2147483647 to represent INF.
+
+Fill each land cell with tu  hi he distance to its nearest treasure chest. If a land cell cannot reach a treasure chest than the value should remain INF.
+Assume the grid can only be traversed up, down, left, or right.
+Example 1:
+Input: [
+  [2147483647,-1,0,2147483647],
+  [2147483647,2147483647,2147483647,-1],
+  [2147483647,-1,2147483647,-1],
+  [0,-1,2147483647,2147483647]
+]
+
+Output: [
+  [3,-1,0,1],
+  [2,2,1,-1],
+  [1,-1,2,-1],
+  [0,-1,3,4]
+]
+
+* m == grid.length
+* n == grid[i].length
+
+bfs 
+sooo look up bfs again
+counter 
+pushing popping blah
+
+UDEMY
+
+
+
+check out udemy
+width thing
+
+level width declaration
+so say the width for each level
+bfs fo sho
+create a marker - str
+for each level
+create a counter array
+create arr = root, str
+while arr.length is > 1
+ …arr.shift on to the array we create
+and add an s
+
+so as we pop we add to counter
+until we hit str
+then pop stri
+and start a new counter
+repeat above
+but add back in string to end of arr with shift
+finally return counters 
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+function getWidthOfLevel(root) {
+  if (!root) return 0;
+
+  const queue = [];
+  queue.push(root);
+
+  let maxWidth = 0;
+
+  while (queue.length) {
+    let levelSize = queue.length;
+    maxWidth = Math.max(maxWidth, levelSize);
+
+    for (let i = 0; i < levelSize; i++) {
+      const currentNode = queue.shift();
+      if (currentNode.left) queue.push(currentNode.left);
+      if (currentNode.right) queue.push(currentNode.right);
+    }
+  }
+
+  return maxWidth;
+}
+
+
+https://leetcode.com/problems/average-of-levels-in-binary-tree/?envType=study-plan-v2&envId=top-interview-150
+
+binary tree bfs
+average per level 
+
+so we know
+we need variables
+
+so we need the sum
+we need the value of the left and right since its binary we are shifting the left and the right
+
+
+function averageOfLevels(root) {
+    if (!root) {
+        return [];
+    }
+    let queue = [[root, 0]];
+    let levelSums = [];
+    let levelCounts = [];
+    while (queue.length > 0) {
+        let [node, level] = queue.shift();
+        if (level === levelSums.length) {
+            levelSums.push(0);
+            levelCounts.push(0);
+        }
+        levelSums[level] += node.val;
+        levelCounts[level]++;
+        if (node.left) {
+            queue.push([node.left, level + 1]);
+        }
+        if (node.right) {
+            queue.push([node.right, level + 1]);
+        }
+    }
+    return levelSums.map((sum, i) => sum / levelCounts[i]);
+}
+
+
+
+Asci string value
+https://leetcode.com/problems/score-of-a-string/
+Each unique character has value
+Add it to the next one
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var scoreOfString = function(s) {
+    let total = 0;
+    const seenCharacters = new Set();
+
+  for (const char of s) {
+    if (!seenCharacters.has(char)) {
+     
+    seenCharacters.add(char);
+total += seenCharacters.charCodeAt(char);
+
+  }
+return total
+}
+
+    
+    
+};
+
+hash 
+
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+two sum 2
+1indexed
+constant space
+
+https://leetcode.com/problems/two-sum/
+return indices of the two numbers such that they add up to target.
+array nums
+integer target
+
+so create 
+
+
+numMap[nums[i]] = i assigns the value of i (the current index) to the key nums[i] in the dictionary numMap.
+
+need a for loop to get index / value 
+
+how do you enhance the efficiency of a hash map via a js example
+
+Let’s create a more intricate scenario that requires all three components (character, count, and index value) in an ES6 Map. Imagine we’re building a word frequency analyzer for a large text corpus.
+
+https://leetcode.com/problems/ransom-note/?envType=study-plan-v2&envId=top-interview-150
+
+ransom note
+
+https://leetcode.com/problems/ransom-note/discuss/3360795/Typescript-HashMap typescript 
+map has set get for of 
+
+function canConstruct(ransomNote: string, magazine: string): boolean {
+  // Create a map to store the frequency of each character in the magazine
+  const magazineChars = new Map<string, number>();
+
+  // Populate the map with the character counts from the magazine
+  for (const char of magazine) {
+    if (magazineChars.has(char)) {
+      magazineChars.set(char, magazineChars.get(char)! + 1);
+    } else {
+      magazineChars.set(char, 1);
+    }
+  }
+
+  // Check if the ransom note can be constructed from the magazine characters
+  for (const char of ransomNote) {
+    if (magazineChars.get(char)) {
+      // Decrement the character count for the current character
+      magazineChars.set(char, magazineChars.get(char)! - 1);
+    } else {
+      // If the character is not available, return false
+      return false;
+    }
+  }
+
+  // If all characters are available, return true
+  return true;
+}
+
+
+
+ransom
+magazine 
+
+Input: ransomNote = "aa", magazine = "aab"
+Output: true
+
+
+
+https://leetcode.com/problems/word-pattern/?envType=study-plan-v2&envId=top-interview-150
+word pattern 290
+
+Given a pattern and a string s, find if s follows the same pattern.
+
+
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+
+Example 1:
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+
+so 
+if the val pattern = val pattern
+
+so map one or other and see if they match 
+
+let val pat = [ ]
+
+input.push(val pat ) 
+so how do i make sure the val pats match
+
+how do i record the values - push
+so it needs to be according to the val pattern 
+so i 
+bijective
+
+https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
+
+In mathematics, injections, surjections, and bijections are classes of functions distinguished by the manner in which arguments (input expressions from the domain) and images (output expressions from the codomain) are related or mapped to each other.
+
+https://en.wikipedia.org/wiki/Codomain
+
+In mathematics, a codomain or set of destination of a function is a set into which all of the output of the function is constrained to fall.
+
+In mathematics, the image of a function is the set of all output values it may produce.
+
+https://leetcode.com/studyplan/leetcode-75/ essential 75
+
+hash
+
+https://www.w3schools.com/js/js_object_maps.asp
+map methods
+
+
+https://leetcode.com/problems/unique-number-of-occurrences/?envType=study-plan-v2&envId=leetcode-75
+unique occurances
+
+return true if the number of occurrences of each value in the array is unique
+
+so what if the value is the count and that adds and is counted 
+
+
+so  got to count if the counts diff then true
+add first 
+
+create hashmap 
+map holds seen 
+so for i in arr
+if I is in seen, 
+count  ++
+
+let unique = []
+
+arr i push if i is in 
+
+answer: python: https://leetcode.com/problems/unique-number-of-occurrences/discuss/2861403/python-collections.Counter()-and-set()
+
+js
+https://leetcode.com/problems/unique-number-of-occurrences/discuss/1481174/Simple-Javascript-Solution
+
+
+https://leetcode.com/problems/find-the-difference-of-two-arrays/?envType=study-plan-v2&envId=leetcode-75
+
+
+2215. Find the Difference of Two Arrays
+
+answer == [[nums1][nums2]]
+
+go thru
+
+
+sliding window
+
+643. Maximum Average Subarray I
+
+https://leetcode.com/problems/maximum-average-subarray-i/?envType=study-plan-v2&envId=leetcode-75
+
+two pointer
+is subsequence
+https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=leetcode-75
+
+https://leetcode.com/problems/is-subsequence/discuss/1811508/Python-Javascript-Easy-solution-with-very-clear-Explanation
+
+283 moves zeros
+
+https://leetcode.com/problems/move-zeroes/?envType=study-plan-v2&envId=leetcode-75
+
+
+
+strings
+https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75 reverse vowels of str 345
+
+
+
+https://leetcode.com/problems/can-place-flowers/description/ flowers
+oo on left and right - beg / end of array then counter =+
+otherwise if there’s 3 ooo then counter =+
+
+so if u see a 1 
+wait 2 if the 3rd
+then i - 1 
+so if prev is null or zero
+and next is null or zero add a number 1 to the array
+we
+out
+for (i=0, i < arr.length -1, i++){
+let prev = i-1
+let next = i + 1
+if (prev == 0 | null & next = 0| null){
+insert
+
+that’s too complex just need to read it
+then compare 
+if count >= n : true : false 
+
+https://youtu.be/FQDIUuWeukk?si=AwoppPxkCB6NesnO js uses === to give false or true from Algojs deez n short
+
+
+
+
+https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/?envType=study-plan-v2&envId=leetcode-75
+kids w greatest many of candies 1431
+
+a + b > a then true
+just need an array of booleans
+
+function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
+    
+
+
+neetcode- road map idea 
+https://youtu.be/8wysIxzqgPI?si=CkWWk_rUAoFvVP0Y
+medium just apply an algo
+soo memorize how to write them in python vs js
+maybe do cram
+
+solve medium 20 -25 mins 
+
+review complex project
+neetcode quizes 
+
+
+
+
+https://leetcode.com/problems/merge-strings-alternately/ 1768 merge 2 strings altern
+
+
+https://leetcode.com/problems/greatest-common-divisor-of-strings/description/ 1071 greatest common divisor strings
+
+s1 s2 
+
+largest string between the two
+
+https://youtu.be/i5I_wrbUdzM?si=plIVS5oC9WqU0UyQ neat code
+
+abababababsnfn.   ababadkfk
+
+biggest is ababa
+
+so slice why
+to make individual 
+
+so create a hash map
+does character appear in. both then add to #
+
+
+if the character count increases
+via for loop
+
+that starts out 
+
+so like two sum 
+we’re looking for a condition - what makes this total
+
+what substring is the largest between the two
+
+diff we need to go thru or at least the length to know with is the biggest 
+
+
+
+
+
+1603 design parking system
+https://leetcode.com/problems/design-parking-system/solutions/877229/javascript-super-simple/
+
+
+https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/
+
+so u have the .next prop 
+
+so while this .next
+divide
+if  cur % _i__ = 0
+
+
+
+
+https://youtu.be/4uJFdTEDpds?si=fEeFJ6sGv0KmEnrE
+colin solving shat
+
+674 longest substring
+
+21 merge two sorted lists
+linked
+so alternating
+this.head
+this.next
+
+
+https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/
+so 10 6 8 20
+insert 2 , 2, 4
+
+so linked list 
+this. head 
+this . next 
+
+
+
+
+
+https://youtu.be/zHECSAdJjTQ?si=XepyxlP3KhdBEZ_y
+3 hacks for intuitive leet
+
+key motivators
+
+
+
+
+https://youtu.be/LFKZLXVO-Dg?si=jlPR1EM6uWQtorxM graph theory
+reducible
+
+2942. Find Words Containing Character
+Easy
+You are given a 0-indexed array of strings words and a character x.
+Return an array of indices representing the words that contain the character x.
+
+https://leetcode.com/problems/find-words-containing-character/
+
+
+
+
+
+
+https://leetcode.com/problems/sort-by/
+
+
+get goood at sorting
+
+
+var sortBy = function(arr, fn) {
+    return arr.sort((a, b) => fn(a) - fn(b))
+};
+
+bruh explain a hashmap
+
+https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/qA
+
+
+https://leetcode.com/problems/shuffle-the-array/
+
+2 n elements 
+
+x1x2…y1y2…
+so indexed array
+
+[1234]
+x1y1…
+
+so need to count from 0 then put that number of n 2nd then 4 etc
+
+so let y = 
+for i in arr 
+
+let x = nums <= nums[n] 
+let y = nums > nums[n]
+
+
+https://leetcode.com/problems/jewels-and-stones/
+
+https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
+
+
+There is a programming language with only four operations and one variable X:
+* ++X and X++ increments the value of the variable X by 1.
+* --X and X-- decrements the value of the variable X by 1.
+Initially, the value of X is 0.
+
+so counter and ++ , —
+or translate into + or -
+
+
+
+https://leetcode.com/problems/find-the-maximum-achievable-number/
+achievable = max by
+
+You are given two integers, num and t.
+An integer x is called achievable if it can become equal to num after applying the following operation no more than t times:
+* Increase or decrease x by 1, and simultaneously increase or decrease num by 1.
+sooo
+4 3
+but t = 0
+or if it’s negative 
+
+t * 2 + num = max achieved 
+
+
+https://leetcode.com/problems/apply-transform-over-each-element-in-array/ transform array
+
+like map but can’t use it
+so whatever the array is transform it according to the function
+
+The returned array should be created such that returnedArray[i] = fn(arr[i], i). - this is confusing  in that i’m not sure what exactly it is saying
+
+https://leetcode.com/problems/allow-one-function-call/solutions/3514065/o-1-sc-o-1-tc-4-diff-method-solution-in-js-and-typescript-day-8/
+fun state solution
+function just once
+so create a result that stores the fn(…args)
+then a variable that holds a boolean 
+
+https://leetcode.com/problems/allow-one-function-call/solutions/3516813/easy-to-understand-js/ also easy just return fn(…args)
+
+https://leetcode.com/problems/allow-one-function-call/solutions/3485840/javascript-simply-counter/ 
+cool ternary operator + return for counter
+return counter == 1 ? fn(...args) : undefined
+  
+
+like i wanted:
+
+let counter=0
+        return function(...args){
+            if(counter==0){
+                counter++
+                return fn(...args)
+            }else{
+                return undefined
+
+1108. Defanging an IP Address
+
+
+https://leetcode.com/problems/concatenation-of-array/
+
+
+trees
+breath first
+basically pushing the children of every node
+
+question is will the array be arranged differently if it’s by breadth or depth originally 
+and we’re not actually making a new array we’re searching thru it
+
+
+
+1689 -decima-binary
+sooo basically I want to create a variable biggest = 0. I want to convert any number to a string then cut up each string into an array then convert it back to an array then find the biggest number and make that the value of the biggest variable
+
+32
+10 + 11+ 11
+sooo basically any number  > 1 
+will increase output by 1
+so could find by digit via making the number a string then divide the digits separately then do a 
+big = 0
+for in loop
+if x > big
+x = big
+return big
+
+https://leetcode.com/problems/array-reduce-transformation/discuss/3506475/5-Diff-Method-or-Solution-in-TypeScript-and-JS-or-Learn-JS-with-Question-or-Day-6 answer to the reduce problem
+
+
+https://leetcode.com/problems/sleep/
+
+
+threesome
+
+https://www.techinterviewhandbook.org/grind75
+
+
+
+
+https://leetcode.com/problems/array-wrapper/
+2695. Array Wrapper
+either add or make a wrapper if string 
+Ok so 
+/**
+ * @param {number[]} nums
+ * @return {void}
+ */
+var ArrayWrapper = function(nums) {
+};
+
+/**
+ * @return {number}
+ */
+ArrayWrapper.prototype.valueOf = function() {   
+}
+/**
+ * @return {string}
+ */
+ArrayWrapper.prototype.toString = function() {   
+}
+/**
+ * const obj1 = new ArrayWrapper([1,2]);
+ * const obj2 = new ArrayWrapper([3,4]);
+ * obj1 + obj2; // 10
+ * String(obj1); // "[1,2]"
+ * String(obj2); // "[3,4]"
+ */
+
+
+2723. Add Two Promises
+resolve a promise
+
+ */
+var addTwoPromises = async function(promise1, promise2) {
+return promise1 + promise2
+    }
+
+func 
+
+https://leetcode.com/problems/debounce/
+
+if func call 
+
+
+https://leetcode.com/problems/return-length-of-arguments-passed/
+
+2703. Return Length of Arguments Passed
+Easy
+Write a function argumentsLength that returns the count of arguments passed to it.
+var argumentsLength = function(...args) {
+if (args < 1)
+        return null
+    else
+        return args.length
+
+};
+
+
+
+Intuitive learning for leet
+https://www.youtube.com/watch?v=1f6N2UrCK6o
+
+Also raw practice
+
+Intuition 
+Fast past knowledge all that is in front of you 
+What has worked before will it work here
+Patterns - feel based - unconscious
+
+Stopped at 8 
+Combine / verify intuition
+
+slow effort process reasoning conscious thinking
+
+Fast
+395. Longest Substring with At Least K Repeating Characters
+https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/solutions/3258439/395-solution-with-step-by-step-explanation/
+
+https://leetcode.com/problems/find-the-difference-of-two-arrays/
+Given two 0-indexed integer arrays nums1 and nums2, return a list answer of size 2 where:
+* answer[0] is a list of all distinct integers in nums1 which are not present in nums2.
+* answer[1] is a list of all distinct integers in nums2 which are not present in nums1.
+Note that the integers in the lists may be returned in any order.
+ https://leetcode.com/problems/find-the-difference-of-two-arrays/solutions/3479823/python-short-1-liner-functional-programming/
+
+Convert lists into sets and take a set difference.
+class Solution:
+    def findDifference(self, nums1: list[int], nums2: list[int]) -> list[list[int]]:
+        return (lambda a, b: [a - b, b - a])(set(nums1), set(nums2))
+SOME GOOD PYTHON TO UNDERSTAND
+
+www.neetcode.io
+valid palindrome 
+
+https://leetcode.com/problems/valid-palindrome/
+
+phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+Pointer Initialization , movement, stop condition 
+
+hannah
+one at the beginning
+one at the end
+if the order is the same 
+
+j = 0
+k = s.length - 1
+
+while (j<k){
+j++;
+k—;
+if (j = k)return true ;
+else return false;
+}
+
+
+Indexing of arrays
+
+https://youtu.be/ZwA1Hl-Y6kw
+
+
+Indexes in array already in memory
+Constant time
+O(n) time big
+
+https://youtu.be/B2KusJcbVIg
+
+Big o natación
+Geometric Progression for dynamic arrays
+
+https://youtu.be/gDqQf4Ekr2A
+
+Big o - examples
+Constant time operation
+Recursion tree
+Fibinaci
+Factorial
+
+
+https://youtu.be/CB8JPjg_3cM
+
+
+
+Big o n
+O(n) = 1 to 1, as array grows by one , n grows by 1
+0(n + a) = two seperate loops separate arrays 
+0(n * a) = nested loop separate arrays
+0(n^2) =n squared) nested loops 1 array
+
+
+Space complexity
+0(1) = nothing changed
+0(n^2) = (out n X out n)
+
+We
+
+
+General principles 
+
+Iterating thru an array
+For (int =o, i < array.length, i++) 
+
+udemy course
+stephen girder ?
+
+bfs -
+while arr.length - significant in that were constant checking the arrays length
+
+we create a new node that is equal to arr.shift()
+then we say
+arr.push(…node.children) which is saying that the subsequent children get pushed on the array which will re order the arr array in a bfs order
+
+iterator function is passed in as an argument to traverseBF function - so we call fn with the current node we are looking at 
+
+Dfs - same except arr.unshift(node.children)
+
+
+WHYYYYYYY
+
+career
+
+ but also influence the things 
+
+gain power
 
