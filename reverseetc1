@@ -1,5 +1,16 @@
 # yas
 
+Group Anagrams
+Given an array of strings strs, group all anagramstogether into sublists. You may return the output in any order.
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+Example 1:
+Input: strs = ["act","pots","tops","cat","stop","hat"]
+
+Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+
+
+
+
 ### Problem: Word Frequency Counter
 
 Write a function called `countWords` that takes a string of text and returns a hash map (or dictionary) where the keys are the words in the text and the values are the frequencies of those words. The function should be case-insensitive, meaning it should treat "Hello" and "hello" as the same word. Punctuation attached to words should be ignored (e.g., "hello!" should be treated as "hello").
