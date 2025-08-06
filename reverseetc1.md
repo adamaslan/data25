@@ -1,13 +1,173 @@
 # yas
 
 Group Anagrams
-Given an array of strings strs, group all anagramstogether into sublists. You may return the output in any order.
+Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
 An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
 Example 1:
 Input: strs = ["act","pots","tops","cat","stop","hat"]
 
 Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
 
+anagrams
+
+Brute Force Permutation Algorithm: Generates all possible permutations of a string to find anagrams. This is often done using a recursive approach.
+
+
+Frequency Count Algorithm: Uses a frequency array to count the occurrences of each character in the strings. If two strings have the same frequency count, they are anagrams.
+
+
+Sorting Algorithm: Involves sorting the characters of each string and comparing the sorted strings. If they are identical, the strings are anagrams.
+
+
+Hash Map Algorithm: Uses a hash map to count character occurrences in a string, similar to the frequency count but with a hash map for more flexibility.
+
+
+Prime Number Algorithm: Assigns a unique prime number to each character and multiplies them together. If the product of two strings is the same, they are anagrams.
+
+
+Backtracking Algorithm: Used to generate anagrams by building them one character at a time and backtracking when a dead end is reached.
+
+
+Dictionary Lookup Algorithm: Involves using a precomputed dictionary of words to find valid anagrams from a given set of letters.
+
+
+Trie Data Structure Algorithm: Uses a trie (prefix tree) to efficiently store and search for anagrams by grouping anagrams together based on their sorted character strings.
+
+
+Heap's Algorithm: An efficient algorithm for generating all permutations of a sequence, which can be used to generate all possible anagrams.
+
+
+Anagram Substring Search (Sliding Window): Used to find all anagrams of a pattern in a given text. This involves using a sliding window approach to compare character counts.
+# implementation
+Sure, let's explore how to implement the Frequency Count Algorithm, Sorting Algorithm, and Hash Map Algorithm for checking if two strings are anagrams in both Python and JavaScript.
+
+### Frequency Count Algorithm
+
+#### Python Example
+
+```python
+def is_anagram(str1, str2):
+    if len(str1) != len(str2):
+        return False
+    frequency = [0] * 256
+    for char in str1:
+        frequency[ord(char)] += 1
+    for char in str2:
+        frequency[ord(char)] -= 1
+        if frequency[ord(char)] < 0:
+            return False
+    return True
+
+# Example usage
+print(is_anagram('listen', 'silent'))  # Output: True
+print(is_anagram('hello', 'world'))    # Output: False
+```
+
+#### JavaScript Example
+
+```javascript
+function isAnagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    let frequency = new Array(256).fill(0);
+    for (let char of str1) {
+        frequency[char.charCodeAt(0)]++;
+    }
+    for (let char of str2) {
+        frequency[char.charCodeAt(0)]--;
+        if (frequency[char.charCodeAt(0)] < 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Example usage
+console.log(isAnagram('listen', 'silent')); // Output: true
+console.log(isAnagram('hello', 'world'));   // Output: false
+```
+
+### Sorting Algorithm
+
+#### Python Example
+
+```python
+def is_anagram(str1, str2):
+    if len(str1) != len(str2):
+        return False
+    return sorted(str1) == sorted(str2)
+
+# Example usage
+print(is_anagram('listen', 'silent'))  # Output: True
+print(is_anagram('hello', 'world'))    # Output: False
+```
+
+#### JavaScript Example
+
+```javascript
+function isAnagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    return str1.split('').sort().join('') === str2.split('').sort().join('');
+}
+
+// Example usage
+console.log(isAnagram('listen', 'silent')); // Output: true
+console.log(isAnagram('hello', 'world'));   // Output: false
+```
+
+### Hash Map Algorithm
+
+#### Python Example
+
+```python
+from collections import defaultdict
+
+def is_anagram(str1, str2):
+    if len(str1) != len(str2):
+        return False
+    frequency = defaultdict(int)
+    for char in str1:
+        frequency[char] += 1
+    for char in str2:
+        frequency[char] -= 1
+        if frequency[char] < 0:
+            return False
+    return True
+
+# Example usage
+print(is_anagram('listen', 'silent'))  # Output: True
+print(is_anagram('hello', 'world'))    # Output: False
+```
+
+#### JavaScript Example
+
+```javascript
+function isAnagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    let frequency = {};
+    for (let char of str1) {
+        frequency[char] = (frequency[char] || 0) + 1;
+    }
+    for (let char of str2) {
+        frequency[char] = (frequency[char] || 0) - 1;
+        if (frequency[char] < 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Example usage
+console.log(isAnagram('listen', 'silent')); // Output: true
+console.log(isAnagram('hello', 'world'));   // Output: false
+```
+
+These examples demonstrate how to use different algorithms to check if two strings are anagrams in both Python and JavaScript.
 
 
 
