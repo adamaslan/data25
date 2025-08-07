@@ -1,14 +1,49 @@
 # yas
 
-Group Anagrams
-Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
-An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
-Example 1:
-Input: strs = ["act","pots","tops","cat","stop","hat"]
 
-Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+### arrays
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-anagrams
+create an array of arrays
+```javascript 
+const arrayOfArrays = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+``` 
+create a function that takes an array of arrays and returns a single array with all elements
+```javascript 
+function flattenArray(arrayOfArrays) {
+  return arrayOfArrays.reduce((acc, curr) => acc.concat(curr), []);
+}
+example using for in loop
+```javascript
+function flattenArray(arrayOfArrays) {
+  let flattened = [];
+  for (let i = 0; i < arrayOfArrays.length; i++) {
+    for (let j = 0; j < arrayOfArrays[i].length; j++) {
+      flattened.push(arrayOfArrays[i][j]);
+    }
+  }
+  return flattened;
+}
+```
+single for in loop example
+```javascript
+function flattenArray(arrayOfArrays) {
+  let flattened = [];
+  for (let subArray of arrayOfArrays) {
+    for (let element of subArray) {
+      flattened.push(element);
+    }
+  }
+  return flattened;
+}
+```
+
+
+## anagrams
 
 Brute Force Permutation Algorithm: Generates all possible permutations of a string to find anagrams. This is often done using a recursive approach.
 
@@ -170,6 +205,19 @@ console.log(isAnagram('hello', 'world'));   // Output: false
 These examples demonstrate how to use different algorithms to check if two strings are anagrams in both Python and JavaScript.
 
 
+
+# Group Anagrams
+Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+Example 1:
+Input: strs = ["act","pots","tops","cat","stop","hat"]
+
+Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+
+input set if set is same then add the original string to the 
+
+out put
+so array of arrays but also include non anagrams as their own sublists
 
 ### Problem: Word Frequency Counter
 
