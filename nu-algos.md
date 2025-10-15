@@ -184,38 +184,37 @@ https://leetcode.com/problems/longest-consecutive-sequence/
 
 https://open.spotify.com/episode/68pQrsXmsyCpJmD7HpdDDJ?si=CBz7PSMsRJOelKNDDxzO4g
 
-
 var longestConsecutive = function(nums) {
     // Step 1: Handle the base case when the array is empty.
     if (nums.length === 0) {
         return 0;
     }
 
-    let numSet = new Set(nums);
+    // Step 2: Create a set for O(1) lookups and remove duplicates.
+    const numSet = new Set(nums);
+    let longest = 0;
 
-    let cnt = 1;        // Initialize a counter for the current consecutive sequence length.
-    let longest = 1;    // Initialize a variable to store the maximum consecutive sequence length.
-
-    // Step 3: Iterate through the elements of 'nums'.
-    for (let num of nums) {
-        // Step 4: If the current element 'num' is the start of a sequence (no 'num-1' in 'numSet'),
+    // Step 3: Iterate through each number in the set.
+    for (const num of numSet) {
+        // Step 4: Check if it's the start of a sequence.
+        // A number is a start of a sequence if its predecessor (num - 1) is not in the set.
         if (!numSet.has(num - 1)) {
-            let x = num;  // Update 'x' to the current element 'num'.
+            let currentLength = 1;
+            let currentNum = num;
 
-            // Step 5: While consecutive elements exist in 'numSet', increment 'cnt' and 'x'.
-            while (numSet.has(x + 1)) {
-                cnt++;
-                x++;
+            // Step 5: Count the length of the consecutive sequence starting from num.
+            while (numSet.has(currentNum + 1)) {
+                currentNum++;
+                currentLength++;
             }
+            
+            // Step 6: Update the longest sequence length found so far.
+            longest = Math.max(longest, currentLength);
         }
-        
-        // Step 6: Update 'longest' with the maximum of 'longest' and 'cnt'.
-        longest = Math.max(longest, cnt);
     }
 
-    // Step 7: Return 'longest' as the result.
+    // Step 7: Return the result.
     return longest;
 };
-
 
 
